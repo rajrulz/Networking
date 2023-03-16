@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF140C1E29C3A77000F5E182 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF140C1D29C3A77000F5E182 /* NetworkingTests.swift */; };
+		EF140E2D29C3B2C300F5E182 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF140E2C29C3B2C300F5E182 /* Container.swift */; };
 		EF8D68C4292E43450083A224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D68C3292E43450083A224 /* AppDelegate.swift */; };
 		EF8D68C6292E43450083A224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D68C5292E43450083A224 /* SceneDelegate.swift */; };
 		EF8D68C8292E43450083A224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D68C7292E43450083A224 /* ViewController.swift */; };
@@ -19,7 +21,20 @@
 		EF8D68E0292E4BBE0083A224 /* EndpointRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D68DF292E4BBE0083A224 /* EndpointRequest.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EF140C1F29C3A77000F5E182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF8D68B8292E43450083A224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8D68BF292E43450083A224;
+			remoteInfo = Networking;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EF140C1B29C3A77000F5E182 /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF140C1D29C3A77000F5E182 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		EF140E2C29C3B2C300F5E182 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		EF8D68C0292E43450083A224 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8D68C3292E43450083A224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF8D68C5292E43450083A224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EF140C1829C3A77000F5E182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF8D68BD292E43450083A224 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +67,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF140C1C29C3A77000F5E182 /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF140C1D29C3A77000F5E182 /* NetworkingTests.swift */,
+			);
+			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		EF140E2E29C3B31B00F5E182 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D68C3292E43450083A224 /* AppDelegate.swift */,
+				EF8D68CC292E43470083A224 /* Assets.xcassets */,
+				EF140E2C29C3B2C300F5E182 /* Container.swift */,
+				EF8D68D1292E43470083A224 /* Info.plist */,
+				EF8D68CE292E43470083A224 /* LaunchScreen.storyboard */,
+				EF8D68C9292E43450083A224 /* Main.storyboard */,
+				EF8D68C5292E43450083A224 /* SceneDelegate.swift */,
+				EF8D68C7292E43450083A224 /* ViewController.swift */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
 		EF8D68B7292E43450083A224 = {
 			isa = PBXGroup;
 			children = (
 				EF8D68C2292E43450083A224 /* Networking */,
+				EF140C1C29C3A77000F5E182 /* NetworkingTests */,
 				EF8D68C1292E43450083A224 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				EF8D68C0292E43450083A224 /* Networking.app */,
+				EF140C1B29C3A77000F5E182 /* NetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,15 +111,9 @@
 		EF8D68C2292E43450083A224 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				EF8D68DA292E4B390083A224 /* UserService */,
+				EF140E2E29C3B31B00F5E182 /* AppFiles */,
 				EF8D68D7292E436E0083A224 /* SharedModules */,
-				EF8D68C3292E43450083A224 /* AppDelegate.swift */,
-				EF8D68C5292E43450083A224 /* SceneDelegate.swift */,
-				EF8D68C7292E43450083A224 /* ViewController.swift */,
-				EF8D68C9292E43450083A224 /* Main.storyboard */,
-				EF8D68CC292E43470083A224 /* Assets.xcassets */,
-				EF8D68CE292E43470083A224 /* LaunchScreen.storyboard */,
-				EF8D68D1292E43470083A224 /* Info.plist */,
+				EF8D68DA292E4B390083A224 /* UserService */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -98,6 +139,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EF140C1A29C3A77000F5E182 /* NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF140C2329C3A77000F5E182 /* Build configuration list for PBXNativeTarget "NetworkingTests" */;
+			buildPhases = (
+				EF140C1729C3A77000F5E182 /* Sources */,
+				EF140C1829C3A77000F5E182 /* Frameworks */,
+				EF140C1929C3A77000F5E182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF140C2029C3A77000F5E182 /* PBXTargetDependency */,
+			);
+			name = NetworkingTests;
+			productName = NetworkingTests;
+			productReference = EF140C1B29C3A77000F5E182 /* NetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EF8D68BF292E43450083A224 /* Networking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF8D68D4292E43470083A224 /* Build configuration list for PBXNativeTarget "Networking" */;
@@ -125,6 +184,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					EF140C1A29C3A77000F5E182 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EF8D68BF292E43450083A224;
+					};
 					EF8D68BF292E43450083A224 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -144,11 +207,19 @@
 			projectRoot = "";
 			targets = (
 				EF8D68BF292E43450083A224 /* Networking */,
+				EF140C1A29C3A77000F5E182 /* NetworkingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EF140C1929C3A77000F5E182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF8D68BE292E43450083A224 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +233,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EF140C1729C3A77000F5E182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF140C1E29C3A77000F5E182 /* NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF8D68BC292E43450083A224 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,12 +250,21 @@
 				EF8D68C4292E43450083A224 /* AppDelegate.swift in Sources */,
 				EF8D68DE292E4B570083A224 /* UserService.swift in Sources */,
 				EF8D68C6292E43450083A224 /* SceneDelegate.swift in Sources */,
+				EF140E2D29C3B2C300F5E182 /* Container.swift in Sources */,
 				EF8D68DC292E4B470083A224 /* User.swift in Sources */,
 				EF8D68D9292E43850083A224 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF140C2029C3A77000F5E182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF8D68BF292E43450083A224 /* Networking */;
+			targetProxy = EF140C1F29C3A77000F5E182 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF8D68C9292E43450083A224 /* Main.storyboard */ = {
@@ -198,6 +286,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EF140C2129C3A77000F5E182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infy.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking.app/Networking";
+			};
+			name = Debug;
+		};
+		EF140C2229C3A77000F5E182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infy.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking.app/Networking";
+			};
+			name = Release;
+		};
 		EF8D68D2292E43470083A224 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Networking/Info.plist;
+				INFOPLIST_FILE = Networking/AppFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Networking/Info.plist;
+				INFOPLIST_FILE = Networking/AppFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -371,6 +493,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EF140C2329C3A77000F5E182 /* Build configuration list for PBXNativeTarget "NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF140C2129C3A77000F5E182 /* Debug */,
+				EF140C2229C3A77000F5E182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EF8D68BB292E43450083A224 /* Build configuration list for PBXProject "Networking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
